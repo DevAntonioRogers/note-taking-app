@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Note App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Note-Taking App</h1>
+
+      <div class="controls">
+        <div>
+          <label for="fontSize">Font Size:</label>
+          <input type="number" value="16" id="fontSize" />
+        </div>
+        <div>
+          <label for="bold">Bold</label>
+          <input type="checkbox" id="bold" />
+        </div>
+        <div>
+          <label for="italic">Italic</label>
+          <input type="checkbox" id="italic" />
+        </div>
+        <div>
+          <label for="color">Text Color</label>
+          <input type="color" value="#000" id="color" />
+        </div>
+      </div>
+
+      <textarea
+        id="note"
+        placeholder="Write your note here..."
+      ></textarea>
+      <button id="postNote">Post Note</button>
+
+      <div id="noteList"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
